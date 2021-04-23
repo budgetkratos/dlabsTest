@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: rgb(88, 147, 241);
+  z-index: 10;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: rgb(88, 147, 241);
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    height: 275px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .image {
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .image {
+    height: 1050px;
+  }
+}
